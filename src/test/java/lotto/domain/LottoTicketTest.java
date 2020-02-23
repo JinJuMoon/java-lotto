@@ -34,7 +34,7 @@ class LottoTicketTest {
                 .hasMessage("로또의 숫자는 6개여야 합니다.");
     }
 
-    @DisplayName("로또숫자들이 중복될 경우 예외 발")
+    @DisplayName("로또숫자들이 중복될 경우 예외 발생")
     @Test
     void duplicatedLottoNumbers() {
         Assertions.assertThatThrownBy(() -> {
